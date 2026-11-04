@@ -1,122 +1,97 @@
-# STILL / FORM — Premium Contemporary Architecture & Residence Website
+# 3D-Architect — Contemporary Architecture & Spatial Walkthrough
 
-An award-winning caliber editorial digital experience inspired by [STILL / FORM](https://stillform.homes/), celebrating Japanese-inspired restraint, contemporary minimalism, honest materials, and considered light through immersive 3D spatial storytelling.
+A world-class editorial architectural digital monograph and interactive 3D spatial experience celebrating contemporary restraint, natural daylight, honest materials, and considered living.
 
 ---
 
 ## 🏛 Visual & Architectural Identity
 
-- **Design Philosophy**: Japanese-inspired minimalism, architectural editorial design, warm natural materials, sophisticated serif typography, generous negative space, and asymmetrical compositions.
+- **Atelier Name**: **KŌRA** (`KŌRA ARCHITECTS`)
+- **Featured Monograph**: **The Kamakura Pavilion** (480 m² · Kamakura Ridge)
 - **Palette**:
-  - **Warm Ivory**: `#F4F1EA` (Primary background)
-  - **Soft Cream**: `#EAE5DB` (Secondary surface)
-  - **Charcoal**: `#24231F` (Primary editorial typography)
-  - **Deep Brown**: `#51483F` (Supporting body text)
-  - **Muted Taupe**: `#A69B8B` (Metadata and labels)
-  - **Warm Grey**: `#D5D0C7` (Borders and dividers)
-  - **Emerald Beacon**: `#3FA85B` (Live status indicator)
+  - **Warm Ivory**: `#F6F4EE` (Primary surface & editorial background)
+  - **Raw Cream**: `#ECE7DE` (Subtle plinth and section contrast)
+  - **Warm Charcoal**: `#1F1E1B` (Primary architectural typography & dark masses)
+  - **Deep Brown**: `#4A433A` (Editorial body prose & specifications)
+  - **Muted Taupe**: `#9E8C76` (Technical metadata, focal lengths, & section indicators)
+  - **Studio Emerald**: `#3FA85B` (Live WebGL engine status beacon)
 - **Typography**:
-  - Large Headlines: `Instrument Serif` & `Cormorant Garamond`
-  - Body & Metadata: `Familjen Grotesk` & `Manrope`
+  - Headlines: *Cormorant Garamond* (Editorial display serif)
+  - Technical Data & Body: *Manrope* (Contemporary grotesque sans)
 
 ---
 
 ## 📐 Complete 10-Section Architecture
 
-1. **SECTION 01 — Cinematic Hero (`Hero.tsx`)**
-   - Full-viewport architectural photograph with natural sunlight.
-   - Minimal text overlay with slow cinematic image reveal and entrance animations.
-   - Headline: *"Space, Considered."*
-   - Subtitle: *"Spaces shaped by architecture, natural light, and the art of living."*
-   - Direct interactive triggers: `Explore Residence` and `Experience the Space`.
-   - Architectural metadata bar: Typology, Year, Timeline, Location.
+1. **SECTION 01 — Cinematic Hero (`Hero.jsx`)**
+   - Full-viewport architectural hero featuring subtle zoom motion, location markers, soundscape ambient audio toggle (Web Audio API synthesized 528Hz harmonic drone), and direct "Begin Exploration" triggers.
 
-2. **SECTION 02 — Featured Residence (`FeaturedResidence.tsx`)**
-   - Asymmetrical editorial layout introducing Residence 01 (The Monolithic Pavilion).
-   - High-resolution photographic storytelling with in-image location tags.
-   - Full technical specifications (Typology, Structure, Glazing, Energy).
-   - Direct link to the structural breakdown.
+2. **SECTION 02 — Featured Residence (`FeaturedResidence.jsx`)**
+   - Asymmetrical editorial layout introducing *The Kamakura Pavilion*, specs grid (480 m², 2026, 4.1m Cantilever, Honed Limestone, Triple Glazing), and 3D study trigger.
 
-3. **SECTION 03 — Architectural Manifesto (`Manifesto.tsx`)**
-   - Large editorial serif headline: *"A residence is more than its form. It is how light moves through it."*
-   - Asymmetrical 3-image composition demonstrating Light Filtration, Material Honesty, and Thresholds.
-   - Generous negative space and scroll-triggered text reveals.
+3. **SECTION 03 — Architectural Manifesto (`Manifesto.jsx`)**
+   - *Silence Carved Between Walls* — 3-image progression exploring Luminance as Volume, Truth in Grain, and Dissolving Boundaries.
 
-4. **SECTION 04 — About / Philosophy (`About.tsx`)**
-   - Split layout: Editorial philosophy on one side, large architectural photograph on the other.
-   - Headline: *"A quieter way to live."*
-   - Smooth horizontal running brand ticker: `STILL / FORM — SPACE / LIGHT — FORM / MATERIAL`.
+4. **SECTION 04 — Studio Philosophy & Continuous Ticker (`About.jsx`)**
+   - Architectural essays on permanence and restraint, paired with a continuous marquee ticker strip.
 
-5. **SECTION 05 — Architectural Exploration (`ArchitectureGallery.tsx`)**
-   - Immersive architectural gallery with categorized perspectives (Exterior, Interior, Lighting, Structural, Context).
-   - Real-time camera focal length HUD (`35mm`, `24mm`, `50mm`), perspective numbering (`01 of 07`), and interactive thumbnail filmstrip.
+5. **SECTION 05 — Perspective Gallery (`ArchitectureGallery.jsx`)**
+   - 7 distinct architectural viewpoints with lens angles (35mm, 28mm, 50mm, 24mm, 19mm, 21mm), category filter HUD, and filmstrip selector.
 
-6. **SECTION 06 — Structure / Full View (`StructureExplorer.tsx`)**
-   - Interactive architectural showcase with real-time Three.js 3D model decomposition.
-   - 7 toggleable structural layers: Full View, Walls & Cores, Floor Plates, Floating Roof, Steel Pillars, Suspended Stair, and Glazing & Apertures.
-   - Orbit drag rotation, technical dimensions, material breakdowns, and toggleable architectural render mode.
+6. **SECTION 06 — 3D Tectonic Blueprint Explorer (`StructureExplorer.jsx`)**
+   - Interactive Three.js model decomposition into 7 structural layers (Unified Massing, Concrete Shear Cores, Stone Plinth Plates, Floating Zinc Canopy, Slender Steel Columns, Suspended Oak Stair, Motorized Glass Bay).
 
-7. **SECTION 07 — Residence Collection (`ResidenceCollection.tsx`)**
-   - Introduces Residence 02 (The Urban Sanctuary).
-   - Headline: *"Not every space needs to be grand."*
-   - Staggered asymmetrical image layout featuring the Living Sanctuary, Primary Suite, and Garden Room with detailed architectural captions.
+7. **SECTION 07 — Residence Collection (`ResidenceCollection.jsx`)**
+   - Residence 02 Kyoto (*The Kyoto Mews*) — *Not every space demands monumentality*, staggered 3-image composition.
 
-8. **SECTION 08 — Room-by-Room Experience (`RoomShowcase.tsx`)**
-   - Three curated editorial subsections:
-     - `01 — THE LIVING AREA`: *"Everything within reach."*
-     - `02 — THE BEDROOM`: *"Slow mornings, softly lit."*
-     - `03 — THE SECOND ROOM`: *"Room for one more."*
-   - Large photography, subtle text transitions, tactile specifications, and circadian daylight notes.
+8. **SECTION 08 — Room-by-Room Experience (`RoomShowcase.jsx`)**
+   - The Living Forum, The Primary Sanctuary, and The Contemplation Study with interactive amenities and lighting orientation specs.
 
-9. **SECTION 09 — Immersive Residence Experience (`ExperienceCTA.tsx`)**
-   - Full-width architectural golden-hour imagery.
-   - Headline: *"Step inside."*
-   - Description: *"Move beyond the photograph and experience the residence from within. Explore its rooms, discover the details, and find your own way through the space."*
-   - CTA: `Enter Residence →` with keyboard controls legend (`[W][A][S][D] Move`, `[E] Interact`, `[Q] Customize`).
+9. **SECTION 09 — Immersive Experience Portal (`ExperienceCTA.jsx`)**
+   - Full-width call-to-action with live WebGL engine status launching the full-screen spatial walkthrough.
 
-10. **SECTION 10 — Contact / Footer (`Footer.tsx`)**
-    - Minimal editorial footer with brand philosophy.
-    - Structured residence and studio navigation columns.
-    - Direct viewing inquiry trigger.
-    - Live pulsing "Open to work" status beacon and smooth back-to-top interaction.
+10. **SECTION 10 — Atelier Footer & Inquiries (`Footer.jsx`)**
+    - Atelier statement, structured monograph links, and back-to-top smooth scroll.
 
 ---
 
-## 🎮 Interactive 3D Spatial Walkthrough (`VirtualTour.tsx`)
+## 🎮 Interactive 3D Spatial Walkthrough (`VirtualTour.jsx`)
 
-A dedicated full-screen interactive 3D spatial tour built with Three.js:
-- **First-Person Walking**: `W`, `A`, `S`, `D` or Arrow keys.
-- **Mouse / Touch Look**: Drag to orbit and look around the room with reticle center focus.
-- **Room Teleportation**: Jump between the Living Lounge, Primary Bedroom Suite, and Study Alcove.
-- **Lighting Engine**: Switch dynamically between Natural Daylight, Golden Hour Sunset, and Nocturne Ambiance.
-- **Material Finishes (`Q`)**: Switch in real-time between European White Oak, Smoked Dark Walnut, Honed Moleanos Limestone, and Textured Travertine.
-- **Architectural Hotspots (`E`)**: Inspect architectural annotations on recessed hearths, panoramic glazing bays, fluted oak millwork, and indirect cove shadowlines.
+- **First-Person WASD Movement**: Walk freely inside the pavilion and out onto the water terrace plinth.
+- **Dynamic Eye Level**: Camera height lowers automatically when stepping down into the Sunken Basalt Hearth.
+- **Sunken Basalt Hearth**: Conversation pit with floating basalt bench, oat linen seating, and glowing flame ribbon with procedural flicker.
+- **4.1m Cantilevered Canopy & Cedar Soffit**: Ceiling extends seamlessly through the glass facade out over the outdoor terrace.
+- **Frameless Glass Corner**: Zero-threshold 3.2m sliding door pocketed open with column-free corner.
+- **Outdoor Reflecting Water Court**: 9.5m mirror water basin with stepping stones and coastal black pine trees.
+- **Suspended White Oak Stair**: 12 floating oak treads with vertical tensioned stainless steel rods.
+- **3 Signature Vantage Points**: Teleport instantly between *Sunken Hearth*, *Water Terrace*, and *Upper Gallery*.
+- **Dynamic Lighting**: Real-time switching between *Daylight*, *Golden Hour*, and *Nocturne*.
+- **Material Themes**: Switch in real-time between *Limestone*, *Charred Cedar*, *Cypress*, and *Travertine*.
+- **Interactive Hotspots**: Inspect architectural details in 3D.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Framework**: React 19 + TypeScript + Vite
-- **Styling**: Tailwind CSS v4 (`@tailwindcss/vite`)
-- **Smooth Scroll**: Lenis + GSAP ScrollTrigger
-- **Animations**: Framer Motion + GSAP
-- **3D Spatial Graphics**: Three.js (`three` + `@types/three`)
+- **Framework**: React 19 + Vite
+- **Language**: JavaScript (JSX)
+- **Styling**: Tailwind CSS v4
+- **3D Graphics**: Three.js
+- **Motion & Smooth Scroll**: Framer Motion, GSAP, Lenis
 - **Icons**: Lucide React
 - **Celebration Effects**: Canvas Confetti
 
 ---
 
-## 🚀 Development & Build
+## 🚀 Getting Started
 
 ```bash
-# Navigate to project directory
-cd stillform-inspired-website
+# Install dependencies
+npm install
 
-# Run local development server
+# Start development server
 npm run dev
-# -> http://localhost:5173/
 
-# Create optimized production build
+# Production build
 npm run build
-# -> Type-checks with tsc and builds with Vite into /dist (0 errors)
 ```
